@@ -3,25 +3,25 @@ public class Variable {
         byte numberOfCores = 4;
         System.out.println(numberOfCores);
 
-        short windows = 10;
-        System.out.println(windows);
+        short winVersion = 10;
+        System.out.println(winVersion);
 
-        int ssd = 500; // GB
-        System.out.println(ssd);
+        int ssdSize = 500; // GB
+        System.out.println(ssdSize);
 
-        long hdd = 1000; // GB
-        System.out.println(hdd);
+        long hddSize = 1000; // GB
+        System.out.println(hddSize);
 
-        float cpuFrequency = 2.30f;
-        System.out.println(cpuFrequency);
+        float cpuFrequencySize = 2.30f;
+        System.out.println(cpuFrequencySize);
 
-        double ram = 8.00;
-        System.out.println(ram);
+        double ramSize = 8.00;
+        System.out.println(ramSize);
 
         char bluetooth = '+';
         System.out.println(bluetooth);
         
-        boolean laptop = true;
-        System.out.println(laptop);
+        boolean isLaptop = true;
+        System.out.println(isLaptop);
     }
 }
