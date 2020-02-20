@@ -5,13 +5,12 @@ public class ConditionalStatement {
             System.out.println("Родился до 2000 года");
         }
 
-        boolean isMale = true;
+        boolean isMale = false;
         if(isMale) {
             System.out.println("Мужик");
         }
 
-        boolean isNotMale = true;
-        if(isNotMale) {
+        if(!isMale) {
             System.out.println("Женщина");
         }
 
