@@ -2,20 +2,16 @@ public class Calculator {
     public static void main(String[] args) {
         int num1 = 15;
         int num2 = 4;
-        char mathOperator = '%';
+        char mathOperator = '^';
 
         if(mathOperator == '+') {
-            int result = num1 + num2;
-            System.out.println(result);
+            System.out.println(num1 + num2);
         } else if(mathOperator == '-') {
-            int result = num1 - num2;
-            System.out.println(result);
+            System.out.println(num1 - num2);
         } else if(mathOperator == '*') {
-            int result = num1 * num2;
-            System.out.println(result);
+            System.out.println(num1 * num2);
         } else if(mathOperator == '/') {
-            int result = num1 / num2;
-            System.out.println(result);
+            System.out.println(num1 / num2);
         } else if(mathOperator == '^') {
             int result = 1;
             for(int i = 1; i <= num2; i++) {
@@ -23,8 +19,7 @@ public class Calculator {
             } 
             System.out.println(result);
         } else if(mathOperator == '%') {
-            int result = num1 / num2;
-            System.out.println(result);
+            System.out.println(num1 / num2);
         }
     }
 }
