@@ -26,13 +26,35 @@
 //}
 
 
+//public class GuessNumber {
+//    public static void main(String[] args) {
+//        int myNum = 60;// значение игрока
+//        int compNum = 50;// число от 0 до 100, которое загадал компьютер
+//        int i;
+
+//        for(i = myNum; i != compNum; i += 0) {
+//            if(i < compNum) {
+//                System.out.println(i + " Введенное Вами число меньше того что загадал компьютер." + " Компьютер выиграл!");
+//                i++;
+//            } else if(i > compNum) {
+//                System.out.println(i + " Введенное Вами число больше того что загадал компьютер." + " Компьютер выиграл!");
+//                i--;
+//            }
+//        }
+//        if(i == compNum) {
+//            System.out.println(i + " Вы угадали!" + " Вы выиграли!");
+//        }
+//    }
+//}
+
+
 public class GuessNumber {
     public static void main(String[] args) {
-        int myNum = 60;// значение игрока
+        int myNum = 50;// значение игрока
         int compNum = 50;// число от 0 до 100, которое загадал компьютер
-        int i;
+        int i = myNum;
 
-        for(i = myNum; i != compNum; i += 0) {
+        do {
             if(i < compNum) {
                 System.out.println(i + " Введенное Вами число меньше того что загадал компьютер." + " Компьютер выиграл!");
                 i++;
@@ -40,9 +62,7 @@ public class GuessNumber {
                 System.out.println(i + " Введенное Вами число больше того что загадал компьютер." + " Компьютер выиграл!");
                 i--;
             }
-        }
-        if(i == compNum) {
-            System.out.println(i + " Вы угадали!" + " Вы выиграли!");
-        }
+        } while(i != compNum);
+        System.out.println(i + " Вы угадали!" + " Вы выиграли!");
     }
 }
