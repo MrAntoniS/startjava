@@ -3,6 +3,7 @@ public class Calculator {
     private int num1;
     private int num2;
     private String mathOperator;
+    private String choice;
 
     void setNum1(int num1) {
         this.num1 = num1;
@@ -16,7 +17,11 @@ public class Calculator {
         this.mathOperator = mathOperator;
     }
 
-    public void mathAction() {
+        void setChoice(String choice) {
+        this.choice = choice;
+    }
+
+    public void calculate() {
         switch(mathOperator) {
             case "+" :
                 System.out.println("Результат: " + (num1 + num2));
@@ -42,6 +47,17 @@ public class Calculator {
                 break;
             default :
                 System.out.println("Неверный математический знак");
+        }
+    }
+
+    public void nextStep() {
+        switch(choice) {
+            case "yes" :
+                break;
+            case "no" :
+                break;
+            default :
+                System.out.println("Хотите продолжить? [yes/no]: ");
         }
     }
 }
