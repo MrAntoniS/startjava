@@ -17,6 +17,10 @@ public class Calculator {
         this.mathOperator = mathOperator;
     }
 
+    public String getChoice() {
+        return choice;
+    }
+
         void setChoice(String choice) {
         this.choice = choice;
     }
@@ -47,17 +51,6 @@ public class Calculator {
                 break;
             default :
                 System.out.println("Неверный математический знак");
-        }
-    }
-
-    public void nextStep() {
-        switch(choice) {
-            case "yes" :
-                break;
-            case "no" :
-                break;
-            default :
-                System.out.println("Хотите продолжить? [yes/no]: ");
         }
     }
 }
