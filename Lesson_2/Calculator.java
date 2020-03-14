@@ -3,7 +3,6 @@ public class Calculator {
     private int num1;
     private int num2;
     private String mathOperator;
-    private String choice;
 
     void setNum1(int num1) {
         this.num1 = num1;
@@ -15,14 +14,6 @@ public class Calculator {
 
     void setMathOperator(String mathOperator) {
         this.mathOperator = mathOperator;
-    }
-
-    public String getChoice() {
-        return choice;
-    }
-
-        void setChoice(String choice) {
-        this.choice = choice;
     }
 
     public void calculate() {
