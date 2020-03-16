@@ -2,12 +2,12 @@ import java.util.Scanner;
 
 public class GuessNumberTest {
     public static void main(String[] args) {
-        GuessNumber guessNumberOne = new GuessNumber();
+        GuessNumber game = new GuessNumber(new Player(), new Player());
 
         Scanner scan = new Scanner(System.in);
         String choise = "yes";
         do {
-            guessNumberOne.game();
+            game.start();
             do {
                 System.out.println("Хотите продолжить? [yes/no]: ");
                 choise = scan.next();
