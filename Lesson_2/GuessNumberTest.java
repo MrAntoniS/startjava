@@ -8,7 +8,9 @@ public class GuessNumberTest {
         do {
             System.out.println("Начнем игру");
             System.out.println("игроки, введите свои имена");
-            GuessNumber game = new GuessNumber(new Player(scan.next()), new Player(scan.next()));
+            String x = scan.next();
+            String y = scan.next();
+            GuessNumber game = new GuessNumber(new Player(x), new Player(y));
             game.start();
             do {
                 System.out.println("Хотите продолжить? [yes/no]: ");
