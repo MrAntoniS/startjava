@@ -8,6 +8,7 @@ public class CalculatorTest {
         String choise = "yes";
         Scanner scan = new Scanner(System.in);
         do {
+            scan.nextLine();
             System.out.print("Введите математическое выражение: ");
             String srcMathExpression = scan.nextLine();
             String[] splitMathExpression = srcMathExpression.split("\\s", 3);
