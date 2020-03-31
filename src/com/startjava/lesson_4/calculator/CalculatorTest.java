@@ -5,17 +5,15 @@ import java.util.Scanner;
 public class CalculatorTest {
     public static void main(String[] args) {
         Calculator calc = new Calculator();
-
-
         String choise = "yes";
+        Scanner scan = new Scanner(System.in);
         do {
-            Scanner scan = new Scanner(System.in);
             System.out.print("Введите математическое выражение: ");
-            String mathExp = scan.nextLine();
-            String[] a = mathExp.split("\\s", 3);
-            calc.setNum1(Integer.parseInt(a[0]));
-            calc.setMathOperator(a[1]);
-            calc.setNum2(Integer.parseInt(a[2]));
+            String srcMathExpression = scan.nextLine();
+            String[] splitMathExpression = srcMathExpression.split("\\s", 3);
+            calc.setNum1(Integer.parseInt(splitMathExpression[0]));
+            calc.setMathOperator(splitMathExpression[1]);
+            calc.setNum2(Integer.parseInt(splitMathExpression[2]));
             calc.calculate();
             do {
                 System.out.println("Хотите продолжить? [yes/no]: ");

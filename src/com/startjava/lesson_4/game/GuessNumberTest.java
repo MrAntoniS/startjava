@@ -4,13 +4,13 @@ import java.util.Scanner;
 
 public class GuessNumberTest {
     public static void main(String[] args) {
-
         Scanner scan = new Scanner(System.in);
         System.out.println("Начнем игру");
-        System.out.println("игроки, введите свои имена");
-        String x = scan.next();
-        String y = scan.next();
-        GuessNumber game = new GuessNumber(new Player(x), new Player(y));
+        System.out.print("игрок №1, введите свое имя: ");
+        String player1 = scan.next();
+        System.out.print("игрок №2, введите свое имя: ");
+        String player2 = scan.next();
+        GuessNumber game = new GuessNumber(new Player(player1), new Player(player2));
         String choise = "yes";
         do {
             game.start();
