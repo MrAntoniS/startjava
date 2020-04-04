@@ -7,10 +7,10 @@ public class GuessNumberTest {
         Scanner scan = new Scanner(System.in);
         System.out.println("Начнем игру");
         System.out.print("игрок №1, введите свое имя: ");
-        String player1 = scan.next();
+        String name1 = scan.next();
         System.out.print("игрок №2, введите свое имя: ");
-        String player2 = scan.next();
-        GuessNumber game = new GuessNumber(new Player(player1), new Player(player2));
+        String name2 = scan.next();
+        GuessNumber game = new GuessNumber(new Player(name1), new Player(name2));
         String choise = "yes";
         do {
             game.start();
