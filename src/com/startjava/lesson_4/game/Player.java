@@ -5,7 +5,6 @@ import java.util.Arrays;
 public class Player {
 
     private String name;
-    private int number;
     private int[] enteredNums = new int[10];
 
     public Player(String name) {
@@ -16,18 +15,8 @@ public class Player {
         return name;
     }
 
-    public int getNumber() {
-        return number;
-    }
-
-    int setNumber(int number) {
-        this.number = number;
-        return number;
-    }
-
     public int[] getEnteredNums(int i) {
-        Arrays.toString(Arrays.copyOf(enteredNums, i));
-        return enteredNums;
+       return Arrays.copyOf(enteredNums, i);
     }
 
     public void setEnteredNum(int enteredNums, int i) {
