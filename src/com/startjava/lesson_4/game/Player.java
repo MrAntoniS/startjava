@@ -15,11 +15,15 @@ public class Player {
         return name;
     }
 
-    public int[] getEnteredNums(int i) {
-       return Arrays.copyOf(enteredNums, i);
-    }
-
     public void setEnteredNum(int enteredNums, int i) {
         this.enteredNums[i] = enteredNums;
     }
- }
+
+    public int getEnteredNum(int i) {
+        return enteredNums[i];
+    }
+
+    public int[] getEnteredNums(int i) {
+        return Arrays.copyOf(enteredNums, i+1);
+    }
+}
