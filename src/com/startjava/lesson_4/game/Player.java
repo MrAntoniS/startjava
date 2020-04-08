@@ -15,8 +15,8 @@ public class Player {
         return name;
     }
 
-    public void setEnteredNum(int enteredNums, int i) {
-        this.enteredNums[i] = enteredNums;
+    public void setEnteredNum(int enteredNum, int i) {
+        enteredNums[i] = enteredNum;
     }
 
     public int getEnteredNum(int i) {
@@ -24,6 +24,6 @@ public class Player {
     }
 
     public int[] getEnteredNums(int i) {
-        return Arrays.copyOf(enteredNums, i+1);
+        return Arrays.copyOf(enteredNums, i + 1);
     }
 }
